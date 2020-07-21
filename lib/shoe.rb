@@ -7,7 +7,7 @@ class Shoe
   def initialize(brand)
     @brand = brand
     BRANDS << brand
-    BRANDS.detect{ |e| BRANDS.count(e) > 1 }
+    BRANDS.detect{ |e| BRANDS.count(e) < 2 }
   end
 
   def cobble
