@@ -8,6 +8,7 @@ class Shoe
     @brand = brand
     BRANDS << brand
     BRANDS.detect{ |e| BRANDS.count(e) < 2 }
+    BRANDS
   end
 
   def cobble
