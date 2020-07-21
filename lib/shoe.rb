@@ -6,11 +6,8 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    if brand.find_all{ |e| brand.count(e) > 1 } == true
-      next
-    else
+    next if brand.find_all{ |e| brand.count(e) > 1 } == true
       BRANDS << brand
-    end
   end
 
   def cobble
